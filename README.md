@@ -5,14 +5,14 @@
 ___
 This work aims to add to the existing work in NLP regarding attention mechanisms in sentiment analysis. Specifically this work uses data gathered from the Athena console on amazon tool product reviews to build and compare 5 different models, but its focus is on the three attention based networks. The Model Builder folder contains the code that was used to generate the output, the results are given at the end of this README. 
 
-All of the code and this README were created to support the thesis paper that will be included in this repository. The data used for this work is not included in this repo for file size reasons, but the sources used to get is the final citation in the references. All other sources used to make this work are also included in the references. The rest of this file goes through the framework/math behind the models and custom-built layers. The results of the project are displayed at the end just before the references.   
+All the code and this README were created to support the thesis paper that will be included in this repository. The data used for this work is not included in this repo for file size reasons, but the sources used to get is the final citation in the references. All other sources used to make this work are also included in the references. The rest of this file goes through the framework/math behind the models and custom-built layers. The results of the project are displayed at the end just before the references.   
 
 ## Layers
 ***
 ### LSTM
 
 #### Visual of the gates of an LSTM
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 I broke this down into four gates, the math will go through the operations in each gate. To get a better understanding of the reasoning behind these gates I suggest reading the Traditional Sentiment Strategies section of the paper in this repository.
 
 #### Math behind an LSTM Layer
@@ -53,13 +53,13 @@ h<sub>t</sub> = O<sub>t</sub>×tanh(R<sub>t</sub>)
 ### BiLSTM
 
 #### Visual of the gates and flow of a BiLSTM
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 This runs the above LSTM layer two times starting from either end of the text. A further explanation of this is given in the Traditional Sentiment Strategies section of the paper in this repository. 
 
 ### Additive Attention
 
 ####Visual of Additive Attention
-![img.png](img.png)
+![img.png](images/img.png)
 
 #### Math behind Additive Attention
 
@@ -80,7 +80,7 @@ C<sub>t</sub>= ∑α<sub>ts</sub>h<sub>s</sub>
 ### Multiplicative Attention
 
 #### Visual of Multiplicative Attention
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 #### Math behind Multiplicative Attention
 
@@ -102,7 +102,7 @@ C<sub>t</sub>= ∑α<sub>ts</sub>h<sub>s</sub>
 ### Local Attention
 
 #### Visual of Local Attention
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 #### Math behind Local Attention
 
@@ -128,16 +128,16 @@ C<sub>t</sub>= ∑α<sub>ts</sub>h<sub>s</sub>
 ## Models
 
 ### Basic BiLSTM:
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 ### BiLSTM Encoder-Decoder:
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 ### Additive Attention Model:
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 ### Multiplicative Attention Model:
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
 The Local Attention model has the same layout as the Multiplicative the attention mechanism is the only difference. Therefore, I did a separate graphic to denote that one minor change. 
 
