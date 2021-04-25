@@ -69,7 +69,7 @@ This runs the above LSTM layer two times starting from either end of the text. A
 
 ### Additive Attention
 
-####Visual of Additive Attention
+#### Visual of Additive Attention
 ![img.png](images/img.png)
 
 #### Math behind Additive Attention
