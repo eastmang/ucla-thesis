@@ -11,9 +11,8 @@ this work uses data gathered from the Athena console on amazon tool product revi
 but its focus is on the three attention based networks. The Model Builder folder contains the code that was used to generate the output, 
 the results are given at the end of this README. 
 
-All the code and this README were created to support the thesis paper that will be included in this repository. 
-I likely will not post it until I have finished the filing process.
-The data used for this work is not included in this repo, but the sources used to get is the 
+All the code and this README were created to support the thesis paper in this repo.
+The data used for this work is not included here, but the sources used to get all of it is the 
 final citation in the references. All other sources used to make this work are also included in the references. The rest 
 of this file goes through the framework/math behind the models and custom-built layers. The results of the project are 
 displayed at the end just before the references.   
